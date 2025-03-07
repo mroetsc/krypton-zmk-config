@@ -1,0 +1,5 @@
+config SHIELD_KRYPTON_LEFT
+    def_bool $(shields_list_contains,krypton_left)
+
+config SHIELD_KRYPTON_RIGHT
+    def_bool $(shields_list_contains,krypton_right)
