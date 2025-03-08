@@ -1,0 +1,17 @@
+file_format: "1"
+id: krypton
+name: Krypton
+type: shield
+url: https://github.com/mroetsc/krypton-kbd/
+requires:
+  - pro_micro
+exposes:
+  - i2c_oled
+features:
+  - keys
+  - display
+  - encoder
+  - studio
+siblings:
+  - krypton_left
+  - krypton_right
