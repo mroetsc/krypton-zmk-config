@@ -1,1 +1,5 @@
 #include "krypton.dtsi"
+
+&left_encoder {
+    status = "okay";
+};

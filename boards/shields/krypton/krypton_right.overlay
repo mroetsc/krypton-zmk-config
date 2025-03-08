@@ -3,3 +3,7 @@
 &default_transform_0 {
     col-offset = <7>;
 };
+
+&right_encoder {
+    status = "okay";
+};
