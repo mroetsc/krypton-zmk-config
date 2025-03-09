@@ -1,4 +1,8 @@
 {
+  "id": "krypton",
+  "name": "krypton",
+  "keyboard_name": "Krypton",
+  "url":"https://github.com/mroetsc/krypton-kbd",
   "layouts": {
     "LAYOUT": {
       "layout": [
