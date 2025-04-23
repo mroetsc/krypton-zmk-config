@@ -25,14 +25,14 @@
             // |   `   |  Q  |  W  |  F  |  P  |  B  |                     |  J  |  L  |  U  |  Y  |  ;  |   -   |
             // |  TAB  |A/GUI|R/ALT|S/CTL|T/SFT|  G  |  [  |     |  ]  |   |  M  |N/SFT|E/CTL|I/ALT|O/GUI|   '   |
             // | SHIFT |  Z  |  X  |  C  |  D  |  V  |LSHFT|     |RSHFT|   |  K  |  H  |  ,  |  .  |  /  | SHIFT |
-            //                             | CTRL | SPACE | LOWER | UPPER | ENTER | BSPC |
+            //                             | ESC  | SPACE | LOWER | UPPER | ENTER | BSPC |
 
             bindings = <
-                   &kp N1        &kp N2       &kp N3        &kp N4         &kp N5                           &kp N6   &kp N7         &kp N8        &kp N9       &kp N0
+           &kp N1        &kp N2       &kp N3        &kp N4         &kp N5                           &kp N6   &kp N7         &kp N8        &kp N9       &kp N0
 &kp GRAVE  &kp Q         &kp W        &kp F         &kp P          &kp B                            &kp J    &kp L          &kp U         &kp Y        &kp SEMI      &kp MINUS
-&kp TAB    &bhm LGUI A  &bhm LALT R  &bhm LCTRL S  &bhm LSHIFT T  &kp G      &kp LBKT   &kp RBKT   &kp M    &bhm RSHIFT N  &bhm RCTRL E  &bhm RALT I  &bhm RGUI O  &kp SQT
+&kp TAB    &bhm LGUI A   &bhm LALT R  &bhm LCTRL S  &bhm LSHIFT T  &kp G      &kp LBKT   &kp RBKT   &kp M    &bhm RSHIFT N  &bhm RCTRL E  &bhm RALT I  &bhm RGUI O   &kp SQT
 &kp LSHFT  &kp Z         &kp X        &kp C         &kp D          &kp V      &kp LSHFT  &kp RSHFT  &kp K    &kp H          &kp COMMA     &kp DOT      &kp FSLH      &kp RSHFT
-                                                    &kp LCTRL      &kp SPACE  &mo 1      &mo 2      &kp RET  &kp BSPC
+                                                    &kp ESC        &kp SPACE  &mo 1      &mo 2      &kp RET  &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
@@ -45,14 +45,14 @@
             // |       |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |                     |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |       |
             // |  F1   |  F2  |  F3  |  F4  |  F5  |  F6  |                     |  F7  |  F8  |  F9  |  F10 |  F11 |  F12  |
             // |   ~   |  !   |  @   |  #   |  $   |  %   | HOME |     | END |  |  ^   |  &   |  *   |  (   |  )   |   ↓   |
-            // |   ↓   |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   | MUTE |     | F20 |  |  :   |  _   |  +   |  {   |  }   |   \   |
+            // |   ↓   |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   | MUTE |     | F20 |  |  :   |  _   |  +   |  {   |  }   |   |   |
             //                                | ↓  |  ↓  |  ↓  | MISC |  ↓  |  ↓  |
 
             bindings = <
            &trans      &trans      &trans      &trans      &trans                           &trans        &trans         &trans         &trans        &trans
 &kp F1     &kp F2      &kp F3      &kp F4      &kp F5      &kp F6                           &kp F7        &kp F8         &kp F9         &kp F10       &kp F11       &kp F12
-&kp TILDE  &kp EXCL    &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT  &kp HOME    &kp END  &kp CARET     &kp AMPS       &kp ASTERISK   &kp LPAR      &kp RPAR      &trans
-&trans     &trans      &trans      &trans      &trans      &trans      &kp C_MUTE  &kp F20  &kp COLON     &kp UNDER      &kp PLUS       &kp LBRC      &kp RBRC      &kp BSLH
+&kp TILDE  &kp EXCL    &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT &kp HOME    &kp END  &kp CARET     &kp AMPS       &kp ASTERISK   &kp LPAR      &kp RPAR      &trans
+&trans     &trans      &trans      &trans      &trans      &trans      &kp C_MUTE  &kp F20  &kp COLON     &kp UNDER      &kp PLUS       &kp LBRC      &kp RBRC      &kp PIPE
                                                &trans      &trans      &trans      &mo 3    &trans        &trans
             >;
 
