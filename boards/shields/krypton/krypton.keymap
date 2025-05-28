@@ -73,15 +73,15 @@
 
             // -----------------------------------------------------------------------------------------------------------------------------
             // |       | BT 0 | BT 1 | BT 2 | BT 3 | BT 4 |                     |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |       |
-            // |BT CLR |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |                     |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |   ↓   |
-            // |BT CLR |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |PG_UP|     |PG_DN|   |  ↓   | LEFT | DOWN |  UP  |RIGHT |   ↓   |
+            // |   ↓   |   ↓   |  ↓   |  ↓   |  ↓   |  ↓   |                     |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |   ↓   |
+            // |   ↓   |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |PG_UP|     |PG_DN|   |  ↓   | LEFT | DOWN |  UP  |RIGHT |   ↓   |
             // |UNLOCK |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |  ↓  |     |  ↓  |   |  ;   |  -   |  =   |  ↓   |  ↓   |   \   |
             //                                |  ↓  |  ↓  | MISC|  ↓  |  ↓  |  ↓  |
 
             bindings = <
                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &trans    &trans     &trans     &trans  &trans
-&bt BT_CLR      &trans        &trans        &trans        &trans        &trans                              &trans    &trans     &trans     &trans  &trans     &trans
-&bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans        &kp PG_UP  &kp PG_DN  &trans    &kp LEFT   &kp DOWN   &kp UP  &kp RIGHT  &trans
+&trans          &trans        &trans        &trans        &trans        &trans                              &trans    &trans     &trans     &trans  &trans     &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &kp PG_UP  &kp PG_DN  &trans    &kp LEFT   &kp DOWN   &kp UP  &kp RIGHT  &trans
 &studio_unlock  &trans        &trans        &trans        &trans        &trans        &trans     &trans     &kp SEMI  &kp MINUS  &kp EQUAL  &trans  &trans     &kp BSLH
                                                           &trans        &trans        &tog 3     &trans     &trans    &trans
             >;
@@ -94,15 +94,15 @@
 
             // ---------------------------------------------------------------------------------------------------------
             // |       |  1  |  2  |  3  |  4  |  5  |                     |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |       |
-            // |  TAB  |  Q  |  W  |  E  |  R  |  T  |                     |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |   ↓   |
-            // |LSHIFT |  A  |  S  |  D  |  F  |  G  | PLAY |     | NEXT | |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |   ↓   |
+            // |  TAB  |  Q  |  W  |  E  |  R  |  T  |                     |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |BT CLR |
+            // |LSHIFT |  A  |  S  |  D  |  F  |  G  | PLAY |     | NEXT | |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |BT CLRA|
             // | LCTRL |  Z  |  X  |  C  |  V  |  B  |  ↓   |     |  ↓   | |  ↓   |  ↓   |  ↓   |  ↓   |  ↓   |   ↓   |
             //                                |  ↓  |  ↓  |  ↓  |  ↓  |  ↓  |  ↓  |
 
             bindings = <
            &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                &trans  &trans  &trans  &trans  &trans
-&kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T                                 &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp A   &kp S   &kp D   &kp F   &kp G   &kp C_PLAY_PAUSE  &kp C_NEXT  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T                                 &trans  &trans  &trans  &trans  &trans  &bt BT_CLR
+&kp LSHFT  &kp A   &kp S   &kp D   &kp F   &kp G   &kp C_PLAY_PAUSE  &kp C_NEXT  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
 &kp LCTRL  &kp Z   &kp X   &kp C   &kp V   &kp B   &trans            &trans      &trans  &trans  &trans  &trans  &trans  &trans
                                    &trans  &trans  &trans            &trans      &trans  &trans
             >;
