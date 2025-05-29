@@ -21,6 +21,11 @@
             key-positions = <26 31>;
             bindings = <&kp ESC>;
         };
+        combo_caps_word {
+            timeout-ms = <50>;
+            key-positions = <25 32>;
+            bindings = <&caps_word>;
+        };
     };
 
     keymap {
